@@ -19,7 +19,7 @@ function PreparePage() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const storedId = localStorage.getItem("userId");
+      const storedId = localStorage.getItem("userId1");
       if (storedId) {
         setUserId(storedId);
         fetch(`/api/progress/user?id=${storedId}`)
@@ -100,11 +100,11 @@ function FancyQuiz() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const storedId = localStorage.getItem("userId");
+      const storedId = localStorage.getItem("userId1");
       if (storedId) {
         setUserId(storedId);
         setLoadingUser(true);
-        const storedUserInfo = localStorage.getItem("userInfo");
+        const storedUserInfo = localStorage.getItem("userInfo1");
         if (storedUserInfo) {
           try {
             const parsed = JSON.parse(storedUserInfo);
@@ -170,8 +170,8 @@ function FancyQuiz() {
     if (data.success && data.userId) {
       setUserId(data.userId);
       if (typeof window !== "undefined") {
-        localStorage.setItem("userInfo", JSON.stringify(userInfo));
-        localStorage.setItem("userId", data.userId);
+        localStorage.setItem("userInfo1", JSON.stringify(userInfo));
+        localStorage.setItem("userId1", data.userId);
       }
       setSubmitted(true);
       setStep("result");

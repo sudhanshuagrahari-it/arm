@@ -71,7 +71,7 @@ export default function EightPsPage() {
   const psList = ps.map(p => p.name);
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const storedId = localStorage.getItem("userId");
+      const storedId = localStorage.getItem("userId1");
       if (storedId) {
         fetch(`/api/progress/user?id=${storedId}`)
           .then(res => res.json())

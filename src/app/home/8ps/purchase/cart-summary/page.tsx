@@ -15,7 +15,7 @@ export default function CartSummaryPage() {
     const storedCart = localStorage.getItem("cart");
     if (storedCart) setCart(JSON.parse(storedCart));
     // Try to get user info from localStorage
-    const storedUser = localStorage.getItem("userInfo");
+    const storedUser = localStorage.getItem("userInfo1");
     if (storedUser) setUserInfo(JSON.parse(storedUser));
     else setStep("userinfo");
   }, []);
@@ -31,7 +31,7 @@ export default function CartSummaryPage() {
       return;
     }
     setError("");
-    localStorage.setItem("userInfo", JSON.stringify(userInfo));
+    localStorage.setItem("userInfo1", JSON.stringify(userInfo));
     setStep("summary");
   }
 

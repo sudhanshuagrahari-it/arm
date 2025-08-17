@@ -20,7 +20,7 @@ function ParticipatePage() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const storedId = localStorage.getItem("userId");
+      const storedId = localStorage.getItem("userId1");
       if (storedId) {
         setUserId(storedId);
         fetch(`/api/progress/user?id=${storedId}`)
@@ -102,7 +102,7 @@ function ParticipateQuiz() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const storedId = localStorage.getItem("userId");
+      const storedId = localStorage.getItem("userId1");
       if (storedId) {
         setUserId(storedId);
         setLoadingUser(true);
@@ -203,8 +203,8 @@ function ParticipateQuiz() {
     if (data.success && data.userId) {
       setUserId(data.userId);
       if (typeof window !== "undefined") {
-        localStorage.setItem("userInfo", JSON.stringify(userInfo));
-        localStorage.setItem("userId", data.userId);
+        localStorage.setItem("userInfo1", JSON.stringify(userInfo));
+        localStorage.setItem("userId1", data.userId);
       }
       setSubmitted(true);
       setStep("result");
