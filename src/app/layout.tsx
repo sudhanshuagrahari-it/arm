@@ -4,6 +4,7 @@ import '../tailwind.css';
 import { Inter } from "next/font/google";
 import AppShell from "./AppShell";
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body className={inter.className} style={{ margin: 0, padding: 0 }}>
         <AppShell>{children}</AppShell>
         <Analytics />
+<SpeedInsights />
 
       </body>
     </html>
