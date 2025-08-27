@@ -12,22 +12,22 @@ import { useRouter } from "next/navigation";
 const tabs = [
   {
     title: "Simple Symbolism of Lord Gaṇeśa",
-    image: "/images/ans_ganesh.png",
+    image: "/images/sym.png",
     content: "Discover the deep symbolism behind Lord Gaṇeśa's form and attributes, representing wisdom, prosperity, and remover of obstacles."
   },
   {
     title: "The Story of Lord Gaṇeśa and the Name “Rāma”",
-    image: "/images/ans_ram.png",
+    image: "/images/icon.png",
     content: "Learn the fascinating story connecting Lord Gaṇeśa and the sacred name 'Rāma', highlighting devotion and divine blessings."
   },
   {
     title: "Asking Blessings On Ganesh Chaturthi",
-    image: "/images/ans_narasimha.png",
+    image: "/images/icon3.png",
     content: "Explore the tradition of seeking Lord Gaṇeśa's blessings during Ganesh Chaturthi for success and spiritual growth."
   },
   {
     title: "Lord Gaṇeśa and Lord Narasiṁhadeva",
-    image: "/images/ans_narasimha.png",
+    image: "/images/icon4.png",
     content: "Understand the connection between Lord Gaṇeśa and Lord Narasiṁhadeva, both protectors and bestowers of courage."
   }
 ];

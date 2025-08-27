@@ -13,32 +13,57 @@ export default function GaneshSymbolismPage() {
   const QUIZ_TITLE = "Ganesh Lord Ram Quiz";
   const MAX_SCORE = 5;
   const quizQuestions = [
-    {
-      question: "What was the condition of the race among the Devatās?",
-      options: ["Talk more", "Listen more", "Sleep more", "Eat more"],
-      answer: "Listen more",
-    },
-    {
-      question: "Why couldn’t Gaṇeśa compete in the race like others?",
-      options: ["Strength", "Anger", "Wisdom and intelligence", "Power over others"],
-      answer: "Wisdom and intelligence",
-    },
-    {
-      question: "Who revealed the secret to Gaṇeśa during the race?",
-      options: ["Desire that must be controlled", "Laziness", "Speed", "Darkness only"],
-      answer: "Desire that must be controlled",
-    },
-    {
-      question: "What lesson do we learn from this story?",
-      options: ["Binding animals", "Pulling us closer to God", "Tying desires", "Controlling enemies"],
-      answer: "Pulling us closer to God",
-    },
-    {
-      question: "What did Gaṇeśa do instead of circling the whole universe?",
-      options: ["Fight strongly", "Retain positive and throw away negative", "Eat more sweets", "Always be strict"],
-      answer: "Retain positive and throw away negative",
-    },
-  ];
+  {
+    question: "What was the condition of the race among the Devatās?",
+    options: [
+      "Whoever runs the fastest will be worshipped first",
+      "Whoever circumambulates the universe three times will be worshipped first",
+      "Whoever flies the highest will be worshipped first",
+      "Whoever collects the most flowers will be worshipped first"
+    ],
+    answer: "Whoever circumambulates the universe three times will be worshipped first"
+  },
+  {
+    question: "Why couldn’t Gaṇeśa compete in the race like others?",
+    options: [
+      "His vehicle was slow – a tiny mouse",
+      "He was afraid",
+      "He was too tired",
+      "He didn’t want to win"
+    ],
+    answer: "His vehicle was slow – a tiny mouse"
+  },
+  {
+    question: "Who revealed the secret to Gaṇeśa during the race?",
+    options: [
+      "Indra",
+      "Śiva",
+      "Nārada Muni",
+      "Kārtikeya"
+    ],
+    answer: "Nārada Muni"
+  },
+  {
+    question: "What lesson do we learn from this story?",
+    options: [
+      "The holy name of the Lord is greater than the whole universe",
+      "Running fast is most important",
+      "One must always ignore saints to win",
+      "Speed and strength decide real victory"
+    ],
+    answer: "The holy name of the Lord is greater than the whole universe"
+  },
+  {
+    question: "What did Gaṇeśa do instead of circling the whole universe?",
+    options: [
+      "He gave up the race",
+      "He wrote “Rāma” and circled the holy name three times",
+      "He went to sleep",
+      "He hid from the other Devatās"
+    ],
+    answer: "He wrote “Rāma” and circled the holy name three times"
+  }
+];
 
   const [step, setStep] = useState("start");
   const [userId, setUserId] = useState<string | null>(null);
@@ -160,7 +185,7 @@ export default function GaneshSymbolismPage() {
         <button className="back-btn" onClick={() => window.history.back()}>← Back</button>
         <h2 className="fancyTitle event-title" style={{textAlign: 'center', marginBottom: '1.5rem'}}>The Story of Lord Gaṇeśa and the Name “Rāma”</h2>
         <div className="event-detail-img-wrap" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '2rem'}}>
-          <Image src="/images/sym.png" alt="Lord Ganesh" width={650} height={1000} style={{objectFit: 'contain', borderRadius: '1.2rem', boxShadow: '0 4px 32px rgba(0,0,0,0.10)'}} />
+          <Image src="/images/icon.png" alt="Lord Ganesh" width={650} height={1000} style={{objectFit: 'contain', borderRadius: '1.2rem', boxShadow: '0 4px 32px rgba(0,0,0,0.10)'}} />
         </div>
         <div className="event-detail-content" style={{margin: '0 auto', borderRadius: '1.2rem', padding: '2rem 1.2rem', boxShadow: '0 2px 16px rgba(0,0,0,0.07)'}}>
           <ul className="event-detail-list" style={{fontSize: '1.08rem', lineHeight: '1.8', paddingLeft: '1.2rem'}}>

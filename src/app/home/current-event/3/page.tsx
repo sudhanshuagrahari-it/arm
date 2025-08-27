@@ -185,7 +185,7 @@ export default function GaneshSymbolismPage() {
         <button className="back-btn" onClick={() => window.history.back()}>← Back</button>
         <h2 className="fancyTitle event-title" style={{textAlign: 'center', marginBottom: '1.5rem'}}>Asking Blessings On Ganesh Chaturthi</h2>
         <div className="event-detail-img-wrap" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '2rem'}}>
-          <Image src="/images/sym.png" alt="Lord Ganesh" width={650} height={1000} style={{objectFit: 'contain', borderRadius: '1.2rem', boxShadow: '0 4px 32px rgba(0,0,0,0.10)'}} />
+          <Image src="/images/icon3.png" alt="Lord Ganesh" width={650} height={1000} style={{objectFit: 'contain', borderRadius: '1.2rem', boxShadow: '0 4px 32px rgba(0,0,0,0.10)'}} />
         </div>
         <div className="event-detail-content" style={{margin: '0 auto', borderRadius: '1.2rem', padding: '2rem 1.2rem', boxShadow: '0 2px 16px rgba(0,0,0,0.07)'}}>
           <div style={{fontSize: '1.12rem', lineHeight: '1.8', paddingLeft: '0.5rem', textAlign: 'center'}}>

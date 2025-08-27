@@ -135,6 +135,7 @@ export const ProgressBarFloating: React.FC<ProgressBarFloatingProps> = ({ comple
   return (
     <div
       ref={dragRef}
+      suppressHydrationWarning
       className="progressbar-floating-google"
       style={{ left: pos.x, top: pos.y, position: "fixed", zIndex: 1000, cursor: "move" }}
       onMouseDown={onDragStart}

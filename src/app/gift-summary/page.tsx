@@ -53,19 +53,32 @@ export default function GiftSummaryPage() {
 
         {/* Gift Info Text */}
         <div className="text-center text-yellow-200 font-semibold mb-6 text-lg">
-          These are your divine gifts from ISKCON: Ladoo Prasadam, Contest Certificate, and a Hare Krishna Mantra Sticker! Collect them at your nearest ISKCON center and celebrate your spiritual journey.
+          These are your divine gifts from ISKCON: Ladoo Prasadam, Contest Certificate, and a Hare Krishna Mantra Sticker! Collect them from ISKCON ABIDS Hyderabad and celebrate your spiritual journey.
         </div>
         <div className="flex flex-row items-center justify-center gap-8 mb-8">
+          <style>{`
+            @keyframes shake {
+              0% { transform: translateX(0); }
+              20% { transform: translateX(-8px); }
+              40% { transform: translateX(8px); }
+              60% { transform: translateX(-8px); }
+              80% { transform: translateX(8px); }
+              100% { transform: translateX(0); }
+            }
+            .gift-img-shake:hover {
+              animation: shake 0.5s;
+            }
+          `}</style>
           <div className="flex flex-col items-center">
-            <img src="https://i.ytimg.com/vi/VfSdTW0dpOQ/maxresdefault.jpg" alt="Ladoo Gift" className="w-20 h-20 rounded-full shadow-lg border-4 border-yellow-300 bg-yellow-100 object-contain transition-transform hover:scale-110 hover:rotate-6" />
+            <img src="https://i.ytimg.com/vi/VfSdTW0dpOQ/maxresdefault.jpg" alt="Ladoo Gift" className="w-32 h-32 rounded-full shadow-lg border-4 border-yellow-300 bg-yellow-100 object-contain transition-transform hover:scale-110 hover:rotate-6 gift-img-shake" />
             <span className="mt-2 text-yellow-400 font-bold text-sm">Ladoo Prasadam</span>
           </div>
           <div className="flex flex-col items-center">
-            <img src="https://www.values.iskconpune.com/wp-content/uploads/2020/08/Certificate-300x213.jpg" alt="Certificate Gift" className="w-20 h-20 rounded-xl shadow-lg border-4 border-blue-300 bg-blue-50 object-contain transition-transform hover:scale-110 hover:-rotate-6" />
+            <img src="https://www.values.iskconpune.com/wp-content/uploads/2020/08/Certificate-300x213.jpg" alt="Certificate Gift" className="w-32 h-32 rounded-xl shadow-lg border-4 border-blue-300 bg-blue-50 object-contain transition-transform hover:scale-110 hover:-rotate-6 gift-img-shake" />
             <span className="mt-2 text-blue-400 font-bold text-sm">Contest Certificate</span>
           </div>
           <div className="flex flex-col items-center">
-            <img src="https://i.pinimg.com/736x/c9/33/d9/c933d9819a9055eabbd5d2ef585697f8.jpg" alt="Hare Krishna Mantra Sticker" className="w-20 h-20 rounded-full shadow-lg border-4 border-green-300 bg-green-50 object-contain transition-transform hover:scale-110 hover:rotate-3" />
+            <img src="https://i.pinimg.com/736x/c9/33/d9/c933d9819a9055eabbd5d2ef585697f8.jpg" alt="Hare Krishna Mantra Sticker" className="w-32 h-32 rounded-full shadow-lg border-4 border-green-300 bg-green-50 object-contain transition-transform hover:scale-110 hover:rotate-3 gift-img-shake" />
             <span className="mt-2 text-green-400 font-bold text-sm">Mantra Sticker</span>
           </div>
         </div>
