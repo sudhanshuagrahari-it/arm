@@ -1,4 +1,3 @@
-/* Copied from 8ps/purchase/purchase-items.css for krishnabasket */
 /* Cart quantity row styles */
 .cart-qty-row {
 	display: flex;
@@ -52,17 +51,20 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background: linear-gradient(120deg, #1a1a1a 60%, #fffbe6 100%);
+	background: rgba(30, 30, 30, .68);
+	border-radius: 2rem;
+	box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18);
+	border: 2px solid #ffe082;
 }
 .purchase-main-box-dark {
 	max-width: 900px;
 	width: 100%;
-	border-radius: 2rem;
-	box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18);
-	border: 2px solid #ffe082;
+	/* border-radius: 2rem; */
+	/* box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18); */
+	/* border: 2px solid #ffe082; */
 	padding: 2.5rem;
 	margin: 2rem 0;
-	background: rgba(30, 30, 30, 0.98);
+	/* background: rgba(30, 30, 30, 0.98); */
 }
 .fancyTitle {
 	color: #ffe082;
@@ -88,7 +90,7 @@
 	margin-bottom: 2.5rem;
 }
 .purchase-card-dark {
-	background: #222;
+	background: rgba(30, 30, 30, .68);
 	border-radius: 1.5rem;
 	box-shadow: 0 2px 12px rgba(255,224,130,0.18);
 	border: 2px solid #ffe082;

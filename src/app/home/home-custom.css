@@ -1,3 +1,77 @@
+/* Fade-in animation for event detail page */
+.event-detail-fadein {
+  animation: fadeInEventDetail 0.8s cubic-bezier(.77,0,.18,1);
+}
+@keyframes fadeInEventDetail {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+/* Event News Popup Bottom Shutter Styles */
+.event-news-popup-bottom {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: linear-gradient(135deg, #fffbe6 60%, #ffe0e0 100%);
+  box-shadow: 0 -8px 32px rgba(0,0,0,0.14);
+  border-radius: 1.5rem 1.5rem 0 0;
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 2.2rem;
+  animation: slideUpShutter 0.7s cubic-bezier(.77,0,.18,1);
+}
+@keyframes slideUpShutter {
+  0% { opacity: 0; transform: translateX(-50%) translateY(60px); }
+  100% { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+/* Event News Popup Styles */
+.event-news-popup {
+  position: fixed;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: linear-gradient(135deg, #fffbe6 60%, #ffe0e0 100%);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 2.2rem;
+  animation: slideDownFade 0.7s cubic-bezier(.77,0,.18,1);
+}
+.event-news-img {
+  width: 80px;
+  height: 80px;
+  margin-right: 1.2rem;
+}
+.event-news-content {
+  text-align: left;
+}
+.event-news-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #c44f00;
+  margin-bottom: 0.5rem;
+}
+.event-news-desc {
+  font-size: 1rem;
+  color: #333;
+}
+@keyframes slideDownFade {
+  0% { opacity: 0; transform: translateX(-50%) translateY(-40px); }
+  100% { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+/* Glowing Animation for Current Event Tile */
+.home-tile-glow {
+  box-shadow: 0 0 24px 8px #ffe0e0, 0 0 8px 2px #c44f00;
+  animation: glowPulse 1.2s infinite alternate;
+}
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 24px 8px #ffe0e0, 0 0 8px 2px #c44f00; }
+  100% { box-shadow: 0 0 36px 16px #ffe0e0, 0 0 16px 4px #c44f00; }
+}
 /* Shloka Contest Detail Page Manual CSS */
 .shloka-detail-box {
   display: flex;

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./home-custom.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,8 +9,25 @@ import { GiPrayerBeads } from "react-icons/gi";
 
 export default function HomePage() {
   const [showSummary, setShowSummary] = useState(false);
+  const [showEventPopup, setShowEventPopup] = useState(true);
+  const [glowEvent, setGlowEvent] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowEventPopup(false);
+    }, 3500);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className="content-overlay">
+      {showEventPopup && (
+        <div className="event-news-popup-bottom">
+          <Image src="/images/ans_ganesh.png" alt="Lord Ganesh" width={80} height={80} className="event-news-img" />
+          <div className="event-news-content">
+            <h2 className="event-news-title">Ganesh Chaturthi Special!</h2>
+            <p className="event-news-desc">Attend and receive a special gift. Celebrate with us and seek Lord Gaṇeśa's blessings!</p>
+          </div>
+        </div>
+      )}
       <div className="homeCustomBox home-main-box">
         <div className="home-header">
           <Image src="/iskcon-logo.png" alt="ISKCON Logo" width={400} height={100} className="home-logo" />
@@ -27,6 +44,12 @@ export default function HomePage() {
             <FaBookOpen className="home-tile-icon" />
             <span className="home-tile-title">Course</span>
             <span className="home-tile-desc">Bhagavad Gita</span>
+          </Link>
+          {/* Current Event Tile */}
+          <Link href="/home/current-event" className="home-tile home-tile-event home-tile-glow">
+            <Image src="/images/ans_ganesh.png" alt="Lord Ganesh" width={48} height={48} className="home-tile-icon" />
+            <span className="home-tile-title">Current Event</span>
+            <span className="home-tile-desc">Ganesh chaturthi</span>
           </Link>
         </div>
         <hr className="home-divider" />
