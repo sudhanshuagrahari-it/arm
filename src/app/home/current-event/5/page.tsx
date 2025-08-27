@@ -36,15 +36,38 @@ export default function GaneshVideoPage() {
         <div className="ganesha-attract-text">Great Personality – Lord Gaṇeśa...<br/>The Remover of Obstacles</div>
         <h2 className="fancyTitle event-title" style={{textAlign: 'center', marginBottom: '1.5rem'}}>Illustrated Story of Lord Gaṇeśa</h2>
         <div className="event-detail-img-wrap" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '2rem'}}>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/dRwzeZGCPhY?si=QxUQmduflQtSgOXd"
-            title="Illustrated Story of Lord Gaṇeśa"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
+          <div className="responsive-iframe-wrap" style={{width: '100%', maxWidth: '700px', aspectRatio: '16/9', position: 'relative'}}>
+            <iframe
+              src="https://www.youtube.com/embed/dRwzeZGCPhY?si=QxUQmduflQtSgOXd"
+              title="Illustrated Story of Lord Gaṇeśa"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', borderRadius: '1rem'}}
+            ></iframe>
+          </div>
+      <style>{`
+        .responsive-iframe-wrap {
+          width: 100%;
+          max-width: 700px;
+          aspect-ratio: 16/9;
+          position: relative;
+        }
+        .responsive-iframe-wrap iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 1rem;
+        }
+        @media (max-width: 700px) {
+          .responsive-iframe-wrap {
+            max-width: 98vw;
+            aspect-ratio: 16/9;
+          }
+        }
+      `}</style>
         </div>
       </div>
     </div>
