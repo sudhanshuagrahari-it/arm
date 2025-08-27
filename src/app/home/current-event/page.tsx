@@ -29,6 +29,11 @@ const tabs = [
     title: "Lord Gaṇeśa and Lord Narasiṁhadeva",
     image: "/images/icon4.png",
     content: "Understand the connection between Lord Gaṇeśa and Lord Narasiṁhadeva, both protectors and bestowers of courage."
+  },
+  {
+    title: "Illustrated Story of Lord Gaṇeśa",
+    image: "/images/shutte.png",
+    content: "Great Personality - Lord Ganesha...The Remover of obstacles."
   }
 ];
 
