@@ -13,32 +13,58 @@ export default function GaneshSymbolismPage() {
   const QUIZ_TITLE = "Ganesh Symbolism Quiz";
   const MAX_SCORE = 5;
   const quizQuestions = [
-    {
-      question: "What do Lord Gaṇeśa’s large ears teach us?",
-      options: ["Talk more", "Listen more", "Sleep more", "Eat more"],
-      answer: "Listen more",
-    },
-    {
-      question: "His big head symbolizes:",
-      options: ["Strength", "Anger", "Wisdom and intelligence", "Power over others"],
-      answer: "Wisdom and intelligence",
-    },
-    {
-      question: "What does the mouse, his vehicle, represent?",
-      options: ["Desire that must be controlled", "Laziness", "Speed", "Darkness only"],
-      answer: "Desire that must be controlled",
-    },
-    {
-      question: "The rope in Lord Gaṇeśa’s hand is for:",
-      options: ["Binding animals", "Pulling us closer to God", "Tying desires", "Controlling enemies"],
-      answer: "Pulling us closer to God",
-    },
-    {
-      question: "One tusk of Lord Gaṇeśa reminds us to:",
-      options: ["Fight strongly", "Retain positive and throw away negative", "Eat more sweets", "Always be strict"],
-      answer: "Retain positive and throw away negative",
-    },
-  ];
+  {
+    question: "What was the condition of the race among the Devatās?",
+    options: [
+      "Whoever runs the fastest will be worshipped first",
+      "Whoever circumambulates the universe three times will be worshipped first",
+      "Whoever flies the highest will be worshipped first",
+      "Whoever collects the most flowers will be worshipped first"
+    ],
+    answer: "Whoever circumambulates the universe three times will be worshipped first"
+  },
+  {
+    question: "Why couldn’t Gaṇeśa compete in the race like others?",
+    options: [
+      "His vehicle was slow – a tiny mouse",
+      "He was afraid",
+      "He was too tired",
+      "He didn’t want to win"
+    ],
+    answer: "His vehicle was slow – a tiny mouse"
+  },
+  {
+    question: "Who revealed the secret to Gaṇeśa during the race?",
+    options: [
+      "Indra",
+      "Śiva",
+      "Nārada Muni",
+      "Kārtikeya"
+    ],
+    answer: "Nārada Muni"
+  },
+  {
+    question: "What lesson do we learn from this story?",
+    options: [
+      "The holy name of the Lord is greater than the whole universe",
+      "Running fast is most important",
+      "One must always ignore saints to win",
+      "Speed and strength decide real victory"
+    ],
+    answer: "The holy name of the Lord is greater than the whole universe"
+  },
+  {
+    question: "What did Gaṇeśa do instead of circling the whole universe?",
+    options: [
+      "He gave up the race",
+      "He wrote “Rāma” and circled the holy name three times",
+      "He went to sleep",
+      "He hid from the other Devatās"
+    ],
+    answer: "He wrote “Rāma” and circled the holy name three times"
+  }
+]
+
 
   const [step, setStep] = useState("start");
   const [userId, setUserId] = useState<string | null>(null);

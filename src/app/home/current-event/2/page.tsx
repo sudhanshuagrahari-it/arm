@@ -9,32 +9,32 @@ import { useRouter } from "next/navigation";
 export default function GaneshSymbolismPage() {
   // ...existing code...
   // Quiz logic
-  const QUIZ_TYPE = "ganesh-symbolism";
-  const QUIZ_TITLE = "Ganesh Symbolism Quiz";
+  const QUIZ_TYPE = "ganesh-lord-ram";
+  const QUIZ_TITLE = "Ganesh Lord Ram Quiz";
   const MAX_SCORE = 5;
   const quizQuestions = [
     {
-      question: "What do Lord Gaṇeśa’s large ears teach us?",
+      question: "What was the condition of the race among the Devatās?",
       options: ["Talk more", "Listen more", "Sleep more", "Eat more"],
       answer: "Listen more",
     },
     {
-      question: "His big head symbolizes:",
+      question: "Why couldn’t Gaṇeśa compete in the race like others?",
       options: ["Strength", "Anger", "Wisdom and intelligence", "Power over others"],
       answer: "Wisdom and intelligence",
     },
     {
-      question: "What does the mouse, his vehicle, represent?",
+      question: "Who revealed the secret to Gaṇeśa during the race?",
       options: ["Desire that must be controlled", "Laziness", "Speed", "Darkness only"],
       answer: "Desire that must be controlled",
     },
     {
-      question: "The rope in Lord Gaṇeśa’s hand is for:",
+      question: "What lesson do we learn from this story?",
       options: ["Binding animals", "Pulling us closer to God", "Tying desires", "Controlling enemies"],
       answer: "Pulling us closer to God",
     },
     {
-      question: "One tusk of Lord Gaṇeśa reminds us to:",
+      question: "What did Gaṇeśa do instead of circling the whole universe?",
       options: ["Fight strongly", "Retain positive and throw away negative", "Eat more sweets", "Always be strict"],
       answer: "Retain positive and throw away negative",
     },
@@ -156,30 +156,31 @@ export default function GaneshSymbolismPage() {
 
   return (
     <div className="content-overlay">
-      <div className="comeCustomBox1 current-event-shell responsive-event-shell event-detail-fadein">
+      <div className="comeCustomBox1">
         <button className="back-btn" onClick={() => window.history.back()}>← Back</button>
-        <h2 className="fancyTitle event-title" style={{textAlign: 'center', marginBottom: '1.5rem'}}>Simple Symbolism of Lord Gaṇeśa</h2>
+        <h2 className="fancyTitle event-title" style={{textAlign: 'center', marginBottom: '1.5rem'}}>The Story of Lord Gaṇeśa and the Name “Rāma”</h2>
         <div className="event-detail-img-wrap" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '2rem'}}>
           <Image src="/images/sym.png" alt="Lord Ganesh" width={650} height={1000} style={{objectFit: 'contain', borderRadius: '1.2rem', boxShadow: '0 4px 32px rgba(0,0,0,0.10)'}} />
         </div>
         <div className="event-detail-content" style={{margin: '0 auto', borderRadius: '1.2rem', padding: '2rem 1.2rem', boxShadow: '0 2px 16px rgba(0,0,0,0.07)'}}>
           <ul className="event-detail-list" style={{fontSize: '1.08rem', lineHeight: '1.8', paddingLeft: '1.2rem'}}>
-            <li><b>Large Ears</b> → Listen more. Gaṇeśa hears everyone’s prayers and gives what is truly needed.</li>
-            <li><b>Big Head</b> → Think big. Represents wisdom, intelligence, and clear thinking.</li>
-            <li><b>Small Eyes</b> → Concentrate. Focus and pay attention.</li>
-            <li><b>Small Mouth</b> → Talk less. Listen more, speak less.</li>
-            <li><b>Large Trunk</b> → Be adaptable. Success requires flexibility.</li>
-            <li><b>Large Stomach</b> → Digest all of life. Accept good and bad with peace.</li>
-            <li><b>Mouse (Vehicle)</b> → Control desires. Ride over desires instead of being ruled by them.</li>
-            <li><b>Modak (Sweet)</b> → Reward of devotion. Symbol of the sweet results of spiritual practice.</li>
-            <li><b>Axe</b> → Cut attachments. Removes obstacles from the devotee’s path.</li>
-            <li><b>Rope</b> → Pulls us closer to God. Guides us gently to the spiritual path.</li>
-            <li><b>One Tusk</b> → Keep the positive, drop the negative. Symbol of overcoming duality.</li>
-            <li><b>Four Arms</b> → Mind, Intellect, Ego, and Conscience – all guided by pure consciousness.</li>
-            <li><b>Legs</b> → Balance life. One in the spiritual world, one in the material world.</li>
-            <li><b>Forehead (Trishul)</b> → Mastery over time – past, present, and future.</li>
+            <li>Once, the Devatās had a race: whoever goes around the universe three times will be worshipped first.</li>
+            <li>All the Devatās rushed off on their fast vehicles</li>
+            <li>Gaṇeśa’s vehicle was a tiny mouse, so he knew he could not compete.</li>
+            <li>On the way, he met Nārada Muni, who revealed a secret:</li>
+              <ul className="event-detail-list" style={{fontSize: '1.08rem', lineHeight: '1.8', paddingLeft: '1.8rem', listStyleType: "circle"}}>
+                <li>Kṛṣānu (Fire) exists because of “ra”</li>
+                <li>bhānu (Sun) exists because of “a”</li>
+                <li>Himakara (Moon) exists because of “ma”</li>
+                <li>Together it forms “Rāma” – the origin of the whole universe.</li>
+              </ul>
+            <li>Gaṇeśa wrote “Rāma” on the ground and went around it three times.</li>
+            <li>In this way, he circumambulated the whole universe, because the holy name is greater than the universe itself.</li>
+            <li>Pleased, the Devatās blessed Gaṇeśa to be worshipped first in every ceremony.</li>
           </ul>
         </div>
+
+
         {/* Quiz Section */}
         <div className="fancy-quiz-box mt-8 p-6 rounded-2xl shadow-xl bg-gradient-to-br from-yellow-50 to-yellow-100 max-w-xl mx-auto">
           {step === "start" && (

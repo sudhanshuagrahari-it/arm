@@ -1,3 +1,39 @@
+@media (max-width: 600px) {
+  .event-news-popup-bottom {
+    width: 96vw;
+    max-width: 96vw;
+    max-height: 60vh;
+    min-height: 140px;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 1.1rem;
+    overflow-y: auto;
+    left: 50%;
+    top: 45%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .event-news-img {
+    width: 164px;
+    height: 364px;
+    margin-right: 0.7rem;
+  }
+  .event-news-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .event-news-desc {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
+}
 /* Fade-in animation for event detail page */
 .event-detail-fadein {
   animation: fadeInEventDetail 0.8s cubic-bezier(.77,0,.18,1);
@@ -17,6 +53,7 @@
   box-shadow: 0 -8px 32px rgba(0,0,0,0.14);
   border-radius: 1.5rem 1.5rem 0 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 1.2rem 2.2rem;
   animation: slideUpShutter 0.7s cubic-bezier(.77,0,.18,1);
@@ -38,7 +75,7 @@
   display: flex;
   align-items: center;
   padding: 1.2rem 2.2rem;
-  animation: slideDownFade 0.7s cubic-bezier(.77,0,.18,1);
+  animation: slideDownFade 0.7s cubic-bezier(.77,0,.18,1); 
 }
 .event-news-img {
   width: 80px;
@@ -57,6 +94,7 @@
 .event-news-desc {
   font-size: 1rem;
   color: #333;
+  text-align: center;
 }
 @keyframes slideDownFade {
   0% { opacity: 0; transform: translateX(-50%) translateY(-40px); }
@@ -350,7 +388,7 @@
     width: 90vw;
     height: 8.5rem;
     padding: 1rem 0.5rem;
-  }
+}
 }
 /* Mahaavatar Quiz Manual CSS */
 .quiz-main-box {

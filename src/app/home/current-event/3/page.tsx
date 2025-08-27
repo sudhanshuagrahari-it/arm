@@ -9,36 +9,61 @@ import { useRouter } from "next/navigation";
 export default function GaneshSymbolismPage() {
   // ...existing code...
   // Quiz logic
-  const QUIZ_TYPE = "ganesh-symbolism";
-  const QUIZ_TITLE = "Ganesh Symbolism Quiz";
+  const QUIZ_TYPE = "ganesh-blessing";
+  const QUIZ_TITLE = "Ganesh Blessing Quiz";
   const MAX_SCORE = 5;
   const quizQuestions = [
-    {
-      question: "What do Lord Gaṇeśa’s large ears teach us?",
-      options: ["Talk more", "Listen more", "Sleep more", "Eat more"],
-      answer: "Listen more",
-    },
-    {
-      question: "His big head symbolizes:",
-      options: ["Strength", "Anger", "Wisdom and intelligence", "Power over others"],
-      answer: "Wisdom and intelligence",
-    },
-    {
-      question: "What does the mouse, his vehicle, represent?",
-      options: ["Desire that must be controlled", "Laziness", "Speed", "Darkness only"],
-      answer: "Desire that must be controlled",
-    },
-    {
-      question: "The rope in Lord Gaṇeśa’s hand is for:",
-      options: ["Binding animals", "Pulling us closer to God", "Tying desires", "Controlling enemies"],
-      answer: "Pulling us closer to God",
-    },
-    {
-      question: "One tusk of Lord Gaṇeśa reminds us to:",
-      options: ["Fight strongly", "Retain positive and throw away negative", "Eat more sweets", "Always be strict"],
-      answer: "Retain positive and throw away negative",
-    },
-  ];
+  {
+    question: "Whatever we ask with our body, words, mind, or heart should be dedicated to whom?",
+    options: [
+      "Lord Śiva",
+      "Lord Kṛṣṇa",
+      "Lord Gaṇeśa",
+      "Goddess Lakṣmī"
+    ],
+    answer: "Lord Kṛṣṇa"
+  },
+  {
+    question: "How should we pray to Lord Gaṇeśa?",
+    options: [
+      "With pride and confidence",
+      "With humility, asking Him to guide us to what is right",
+      "By demanding what we want",
+      "By remaining silent"
+    ],
+    answer: "With humility, asking Him to guide us to what is right"
+  },
+  {
+    question: "What is the role of Lord Gaṇeśa and other deities in our prayers?",
+    options: [
+      "To give us whatever material things we ask for",
+      "To send us to the Supreme Lord, Śrī Kṛṣṇa",
+      "To test our patience",
+      "To grant only wealth and prosperity"
+    ],
+    answer: "To send us to the Supreme Lord, Śrī Kṛṣṇa"
+  },
+  {
+    question: "When we pray to Lord Gaṇeśa, what should we ask Him to remove?",
+    options: [
+      "Our hunger",
+      "Our debts",
+      "Inauspiciousness from our mind, heart, and life",
+      "Our material possessions"
+    ],
+    answer: "Inauspiciousness from our mind, heart, and life"
+  },
+  {
+    question: "What is true happiness according to our scriptures?",
+    options: [
+      "Having lots of money",
+      "Material pleasures",
+      "Knowledge that brings us closer to Lord Kṛṣṇa and frees us from misery",
+      "Winning competitions"
+    ],
+    answer: "Knowledge that brings us closer to Lord Kṛṣṇa and frees us from misery"
+  }
+];
 
   const [step, setStep] = useState("start");
   const [userId, setUserId] = useState<string | null>(null);
@@ -158,27 +183,24 @@ export default function GaneshSymbolismPage() {
     <div className="content-overlay">
       <div className="comeCustomBox1 current-event-shell responsive-event-shell event-detail-fadein">
         <button className="back-btn" onClick={() => window.history.back()}>← Back</button>
-        <h2 className="fancyTitle event-title" style={{textAlign: 'center', marginBottom: '1.5rem'}}>Simple Symbolism of Lord Gaṇeśa</h2>
+        <h2 className="fancyTitle event-title" style={{textAlign: 'center', marginBottom: '1.5rem'}}>Asking Blessings On Ganesh Chaturthi</h2>
         <div className="event-detail-img-wrap" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '2rem'}}>
           <Image src="/images/sym.png" alt="Lord Ganesh" width={650} height={1000} style={{objectFit: 'contain', borderRadius: '1.2rem', boxShadow: '0 4px 32px rgba(0,0,0,0.10)'}} />
         </div>
         <div className="event-detail-content" style={{margin: '0 auto', borderRadius: '1.2rem', padding: '2rem 1.2rem', boxShadow: '0 2px 16px rgba(0,0,0,0.07)'}}>
-          <ul className="event-detail-list" style={{fontSize: '1.08rem', lineHeight: '1.8', paddingLeft: '1.2rem'}}>
-            <li><b>Large Ears</b> → Listen more. Gaṇeśa hears everyone’s prayers and gives what is truly needed.</li>
-            <li><b>Big Head</b> → Think big. Represents wisdom, intelligence, and clear thinking.</li>
-            <li><b>Small Eyes</b> → Concentrate. Focus and pay attention.</li>
-            <li><b>Small Mouth</b> → Talk less. Listen more, speak less.</li>
-            <li><b>Large Trunk</b> → Be adaptable. Success requires flexibility.</li>
-            <li><b>Large Stomach</b> → Digest all of life. Accept good and bad with peace.</li>
-            <li><b>Mouse (Vehicle)</b> → Control desires. Ride over desires instead of being ruled by them.</li>
-            <li><b>Modak (Sweet)</b> → Reward of devotion. Symbol of the sweet results of spiritual practice.</li>
-            <li><b>Axe</b> → Cut attachments. Removes obstacles from the devotee’s path.</li>
-            <li><b>Rope</b> → Pulls us closer to God. Guides us gently to the spiritual path.</li>
-            <li><b>One Tusk</b> → Keep the positive, drop the negative. Symbol of overcoming duality.</li>
-            <li><b>Four Arms</b> → Mind, Intellect, Ego, and Conscience – all guided by pure consciousness.</li>
-            <li><b>Legs</b> → Balance life. One in the spiritual world, one in the material world.</li>
-            <li><b>Forehead (Trishul)</b> → Mastery over time – past, present, and future.</li>
-          </ul>
+          <div style={{fontSize: '1.12rem', lineHeight: '1.8', paddingLeft: '0.5rem', textAlign: 'center'}}>
+            <div style={{marginBottom: '1.2rem', fontWeight: 600}}>
+              With whatever desire we worship Lord Ganesha, we will get what we want.<br/>
+              <span style={{fontWeight: 700, color: '#c44f00'}}>But The Question is What We Should Ask For?</span>
+            </div>
+            <ul style={{textAlign: 'left', fontSize: '1.08rem', lineHeight: '1.8', paddingLeft: '1.2rem', margin: '0 auto', maxWidth: '600px'}}>
+              <li>Whatever we ask with our body, words, mind, or heart should be dedicated to <b>Lord Kṛṣṇa</b>, who is beyond material qualities.</li>
+              <li>We should pray with humility: <i>“O Lord, I don’t know what is good for me. Please guide me to what is right.”</i></li>
+              <li>In this way, Lord Gaṇeśa and all other deities bless us by leading us to the Supreme Personality of Godhead, <b>Śrī Kṛṣṇa</b>.</li>
+              <li>When we pray to Lord Gaṇeśa, we ask him to remove inauspiciousness from our mind, heart, and life.</li>
+              <li>True happiness is not material pleasure — it is the knowledge that brings us closer to Lord Kṛṣṇa and frees us from misery.</li>
+            </ul>
+          </div>
         </div>
         {/* Quiz Section */}
         <div className="fancy-quiz-box mt-8 p-6 rounded-2xl shadow-xl bg-gradient-to-br from-yellow-50 to-yellow-100 max-w-xl mx-auto">

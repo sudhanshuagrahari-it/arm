@@ -9,36 +9,62 @@ import { useRouter } from "next/navigation";
 export default function GaneshSymbolismPage() {
   // ...existing code...
   // Quiz logic
-  const QUIZ_TYPE = "ganesh-symbolism";
-  const QUIZ_TITLE = "Ganesh Symbolism Quiz";
+  const QUIZ_TYPE = "ganesh-narshima";
+  const QUIZ_TITLE = "Ganesh Narshima Quiz";
   const MAX_SCORE = 5;
   const quizQuestions = [
-    {
-      question: "What do Lord Gaṇeśa’s large ears teach us?",
-      options: ["Talk more", "Listen more", "Sleep more", "Eat more"],
-      answer: "Listen more",
-    },
-    {
-      question: "His big head symbolizes:",
-      options: ["Strength", "Anger", "Wisdom and intelligence", "Power over others"],
-      answer: "Wisdom and intelligence",
-    },
-    {
-      question: "What does the mouse, his vehicle, represent?",
-      options: ["Desire that must be controlled", "Laziness", "Speed", "Darkness only"],
-      answer: "Desire that must be controlled",
-    },
-    {
-      question: "The rope in Lord Gaṇeśa’s hand is for:",
-      options: ["Binding animals", "Pulling us closer to God", "Tying desires", "Controlling enemies"],
-      answer: "Pulling us closer to God",
-    },
-    {
-      question: "One tusk of Lord Gaṇeśa reminds us to:",
-      options: ["Fight strongly", "Retain positive and throw away negative", "Eat more sweets", "Always be strict"],
-      answer: "Retain positive and throw away negative",
-    },
-  ];
+  {
+    question: "Which Purāṇa mentions the connection between Lord Gaṇeśa and Lord Narasiṁhadeva?",
+    options: [
+      "Viṣṇu Purāṇa",
+      "Nārasiṁha Purāṇa",
+      "Garuḍa Purāṇa",
+      "Padma Purāṇa"
+    ],
+    answer: "Nārasiṁha Purāṇa"
+  },
+  {
+    question: "According to the verse, who should be remembered first before worshipping Gaṇeśa?",
+    options: [
+      "Indra",
+      "Nārada Muni",
+      "Lord Narasiṁhadeva",
+      "Lord Śiva"
+    ],
+    answer: "Lord Narasiṁhadeva"
+  },
+  {
+    question: "From whom did Gaṇeśa receive the power to remove obstacles (Vighna-vināyaka)?",
+    options: [
+      "From his own penance",
+      "From Lord Śiva",
+      "From Lord Narasiṁhadeva",
+      "From Goddess Pārvatī"
+    ],
+    answer: "From Lord Narasiṁhadeva"
+  },
+  {
+    question: "What lesson does this pastime teach us about Gaṇeśa?",
+    options: [
+      "He is independent and supreme",
+      "His greatness is in being a devotee of the Supreme Lord",
+      "He only gives material blessings",
+      "He is equal to Kṛṣṇa"
+    ],
+    answer: "His greatness is in being a devotee of the Supreme Lord"
+  },
+  {
+    question: "How can we also receive true blessings like Gaṇeśa?",
+    options: [
+      "By running very fast",
+      "By worshipping the Lord and serving His devotees",
+      "By asking for material wealth",
+      "By ignoring the scriptures"
+    ],
+    answer: "By worshipping the Lord and serving His devotees"
+  }
+];
+
 
   const [step, setStep] = useState("start");
   const [userId, setUserId] = useState<string | null>(null);
@@ -158,27 +184,37 @@ export default function GaneshSymbolismPage() {
     <div className="content-overlay">
       <div className="comeCustomBox1 current-event-shell responsive-event-shell event-detail-fadein">
         <button className="back-btn" onClick={() => window.history.back()}>← Back</button>
-        <h2 className="fancyTitle event-title" style={{textAlign: 'center', marginBottom: '1.5rem'}}>Simple Symbolism of Lord Gaṇeśa</h2>
+        <h2 className="fancyTitle event-title" style={{textAlign: 'center', marginBottom: '1.5rem'}}>Lord Gaṇeśa and Lord Narasiṁhadeva</h2>
         <div className="event-detail-img-wrap" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '2rem'}}>
           <Image src="/images/sym.png" alt="Lord Ganesh" width={650} height={1000} style={{objectFit: 'contain', borderRadius: '1.2rem', boxShadow: '0 4px 32px rgba(0,0,0,0.10)'}} />
         </div>
         <div className="event-detail-content" style={{margin: '0 auto', borderRadius: '1.2rem', padding: '2rem 1.2rem', boxShadow: '0 2px 16px rgba(0,0,0,0.07)'}}>
-          <ul className="event-detail-list" style={{fontSize: '1.08rem', lineHeight: '1.8', paddingLeft: '1.2rem'}}>
-            <li><b>Large Ears</b> → Listen more. Gaṇeśa hears everyone’s prayers and gives what is truly needed.</li>
-            <li><b>Big Head</b> → Think big. Represents wisdom, intelligence, and clear thinking.</li>
-            <li><b>Small Eyes</b> → Concentrate. Focus and pay attention.</li>
-            <li><b>Small Mouth</b> → Talk less. Listen more, speak less.</li>
-            <li><b>Large Trunk</b> → Be adaptable. Success requires flexibility.</li>
-            <li><b>Large Stomach</b> → Digest all of life. Accept good and bad with peace.</li>
-            <li><b>Mouse (Vehicle)</b> → Control desires. Ride over desires instead of being ruled by them.</li>
-            <li><b>Modak (Sweet)</b> → Reward of devotion. Symbol of the sweet results of spiritual practice.</li>
-            <li><b>Axe</b> → Cut attachments. Removes obstacles from the devotee’s path.</li>
-            <li><b>Rope</b> → Pulls us closer to God. Guides us gently to the spiritual path.</li>
-            <li><b>One Tusk</b> → Keep the positive, drop the negative. Symbol of overcoming duality.</li>
-            <li><b>Four Arms</b> → Mind, Intellect, Ego, and Conscience – all guided by pure consciousness.</li>
-            <li><b>Legs</b> → Balance life. One in the spiritual world, one in the material world.</li>
-            <li><b>Forehead (Trishul)</b> → Mastery over time – past, present, and future.</li>
-          </ul>
+          <div style={{fontSize: '1.12rem', lineHeight: '1.8', paddingLeft: '0.5rem', textAlign: 'center'}}>
+            <div style={{marginBottom: '1.2rem', fontWeight: 600}}>
+              In the <b>Nārasiṁha Purāṇa</b>, there is a prayer connecting Lord Gaṇeśa with Lord Narasiṁhadeva:<br/>
+              <span style={{display: 'block', margin: '1rem 0', fontStyle: 'italic', fontSize: '1.05rem', color: '#c44f00'}}>
+                iti matvā mahādevaṁ narasiṁhaṁ janārdanam<br/>
+                gaṇeśaṁ bhāvayet paścāt tasya mantraṁ samuccaret<br/>
+                (Nārasiṁha Purāṇa 41.55)
+              </span>
+              <span style={{fontWeight: 500}}>Meaning:<br/>First remember Lord Narasiṁha as the Supreme Lord, then worship Gaṇeśa.</span>
+            </div>
+            <div style={{marginBottom: '1.2rem', textAlign: 'left', maxWidth: '600px', margin: '0 auto'}}>
+              <b>The Story</b><br/>
+              Once Gaṇeśa prayed to Lord Narasiṁhadeva for blessings.<br/><br/>
+              Narasiṁha, pleased with his devotion, gave Gaṇeśa the power to remove obstacles (Vighna-vināyaka).<br/><br/>
+              From that time, Gaṇeśa is worshipped as the remover of obstacles — but his power comes from the blessings of the Lord.<br/><br/>
+              Thus, whenever devotees worship Gaṇeśa, they remember he is a servant of the Supreme Lord, not independent.
+            </div>
+            <div style={{marginBottom: '1.2rem', textAlign: 'left', maxWidth: '600px', margin: '0 auto'}}>
+              <b>Simple Lessons</b>
+              <ul style={{fontSize: '1.08rem', lineHeight: '1.8', paddingLeft: '1.2rem', marginTop: '0.7rem'}}>
+                <li>Gaṇeśa is great because he is a devotee of the Lord.</li>
+                <li>His strength to remove obstacles comes from Lord Narasiṁha.</li>
+                <li>We also receive blessings when we worship the Lord and serve His devotees.</li>
+              </ul>
+            </div>
+          </div>
         </div>
         {/* Quiz Section */}
         <div className="fancy-quiz-box mt-8 p-6 rounded-2xl shadow-xl bg-gradient-to-br from-yellow-50 to-yellow-100 max-w-xl mx-auto">

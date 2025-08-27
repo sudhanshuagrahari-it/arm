@@ -21,7 +21,7 @@ export default function HomePage() {
     <div className="content-overlay">
       {showEventPopup && (
         <div className="event-news-popup-bottom">
-          <Image src="/images/ans_ganesh.png" alt="Lord Ganesh" width={80} height={80} className="event-news-img" />
+          <Image src="/images/shutte.png" alt="Lord Ganesh" width={480} height={480} className="event-news-img" />
           <div className="event-news-content">
             <h2 className="event-news-title">Ganesh Chaturthi Special!</h2>
             <p className="event-news-desc">Attend and receive a special gift. Celebrate with us and seek Lord Gaṇeśa's blessings!</p>
@@ -47,7 +47,7 @@ export default function HomePage() {
           </Link>
           {/* Current Event Tile */}
           <Link href="/home/current-event" className="home-tile home-tile-event home-tile-glow">
-            <Image src="/images/ans_ganesh.png" alt="Lord Ganesh" width={48} height={48} className="home-tile-icon" />
+            <Image src="/images/icon.png" alt="Lord Ganesh" width={48} height={48} className="home-tile-icon" />
             <span className="home-tile-title">Current Event</span>
             <span className="home-tile-desc">Ganesh chaturthi</span>
           </Link>
