@@ -14,56 +14,56 @@ export default function GaneshSymbolismPage() {
   const MAX_SCORE = 5;
   const quizQuestions = [
   {
-    question: "What was the condition of the race among the Devatās?",
+    question: "What do Lord Gaṇeśa’s large ears teach us?",
     options: [
-      "Whoever runs the fastest will be worshipped first",
-      "Whoever circumambulates the universe three times will be worshipped first",
-      "Whoever flies the highest will be worshipped first",
-      "Whoever collects the most flowers will be worshipped first"
+      "Talk more",
+      "Listen more",
+      "Sleep more",
+      "Eat more"
     ],
-    answer: "Whoever circumambulates the universe three times will be worshipped first"
+    answer: "Listen more"
   },
   {
-    question: "Why couldn’t Gaṇeśa compete in the race like others?",
+    question: "His big head symbolizes:",
     options: [
-      "His vehicle was slow – a tiny mouse",
-      "He was afraid",
-      "He was too tired",
-      "He didn’t want to win"
+      "Strength",
+      "Anger",
+      "Wisdom and intelligence",
+      "Power over others"
     ],
-    answer: "His vehicle was slow – a tiny mouse"
+    answer: "Wisdom and intelligence"
   },
   {
-    question: "Who revealed the secret to Gaṇeśa during the race?",
+    question: "What does the mouse, his vehicle, represent?",
     options: [
-      "Indra",
-      "Śiva",
-      "Nārada Muni",
-      "Kārtikeya"
+      "Desire that must be controlled",
+      "Laziness",
+      "Speed",
+      "Darkness only"
     ],
-    answer: "Nārada Muni"
+    answer: "Desire that must be controlled"
   },
   {
-    question: "What lesson do we learn from this story?",
+    question: "The rope in Lord Gaṇeśa’s hand is for:",
     options: [
-      "The holy name of the Lord is greater than the whole universe",
-      "Running fast is most important",
-      "One must always ignore saints to win",
-      "Speed and strength decide real victory"
+      "Binding animals",
+      "Pulling us closer to God",
+      "Tying desires",
+      "Controlling enemies"
     ],
-    answer: "The holy name of the Lord is greater than the whole universe"
+    answer: "Pulling us closer to God"
   },
   {
-    question: "What did Gaṇeśa do instead of circling the whole universe?",
+    question: "One tusk of Lord Gaṇeśa reminds us to:",
     options: [
-      "He gave up the race",
-      "He wrote “Rāma” and circled the holy name three times",
-      "He went to sleep",
-      "He hid from the other Devatās"
+      "Fight strongly",
+      "Retain positive and throw away negative",
+      "Eat more sweets",
+      "Always be strict"
     ],
-    answer: "He wrote “Rāma” and circled the holy name three times"
+    answer: "Retain positive and throw away negative"
   }
-]
+];
 
 
   const [step, setStep] = useState("start");
